@@ -2,6 +2,7 @@
 import React from "react" // REACT IMPORT
 import {NavLink} from "react-router-dom"
 import Logo from "../assets/logo/logo.svg" // LOGO IMPORT 
+import '../style/components/header.css'
 
 // HEADER HTML CONSTITUTION //
 const Header = () => {
