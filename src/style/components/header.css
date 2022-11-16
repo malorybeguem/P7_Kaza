@@ -2,18 +2,18 @@
 
 header{
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 16px;
-    height: 47px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-.logo {
+header img {
     width: auto;
-    height: 47px;
+    height: 20%;
     object-fit: cover;
+    margin-left: 50px;
 }
 
 ul {
@@ -21,6 +21,12 @@ ul {
 }
 
 header ul li{
+    display: flex;
     margin-top: 10px;
-    margin-left: 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: large;
+    color: #FF6060;
 }
