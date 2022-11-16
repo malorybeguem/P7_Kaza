@@ -2,4 +2,25 @@
 
 header{
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    height: 47px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: 47px;
+    object-fit: cover;
+}
+
+ul {
+    display: flex;
+}
+
+header ul li{
+    margin-top: 10px;
+    margin-left: 15px;
 }

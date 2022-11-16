@@ -1,7 +1,7 @@
 // IMPORTATIONS //
 import React from "react" // REACT IMPORT
 import {NavLink} from "react-router-dom"
-import Logo from "../assets/logo/Logo.svg" // LOGO IMPORT 
+import Logo from "../assets/logo/logo.svg" // LOGO IMPORT 
 
 // HEADER HTML CONSTITUTION //
 const Header = () => {
