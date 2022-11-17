@@ -13,7 +13,6 @@ header{
     width: auto;
     height: 20%;
     object-fit: cover;
-    margin-left: 50px;
 }
 
 header ul {
@@ -22,11 +21,12 @@ header ul {
 
 header ul li{
     display: flex;
-    margin-top: 10px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 10px 0 0 90px;
     justify-content: space-between;
     font-weight: 500;
-    font-size: large;
+    font-size: 1.5em;
+    color: #FF6060;
+}
+header ul a:visited{
     color: #FF6060;
 }
