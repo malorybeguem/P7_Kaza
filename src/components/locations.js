@@ -3,8 +3,9 @@ import axios from "axios"
 import React from "react"
 import {useEffect, useState} from "react"
 import Card from "./card"
+import "../style/home.css"
 
-const Locations = () => {
+const locations = () => {
     const [locationsData, setLocationsData] = useState([])
     useEffect(() => {
         axios
@@ -24,4 +25,4 @@ const Locations = () => {
         </main>
     )
 }
-export default Locations
+export default locations

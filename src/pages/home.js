@@ -4,7 +4,6 @@ import Footer from "../components/footer"
 import Locations from "../components/locations"
 import Header from "../components/header"
 import home from "../assets/img/home.png"
-import "../style/home.css"
 
 // HOME PAGE // 
 const Home = () => {

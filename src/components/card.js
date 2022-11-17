@@ -1,21 +1,23 @@
-import React from "react"
-import { Link } from 'react-router-dom'
+import React from 'react';
+import '../style/components/card.css';
+import {
+    BrowserRouter as Router,
+    Link,
+} from "react-router-dom";
 
-const Card = ({location}) => {
-    //recover name of location
-    const urlName = location.title.split(' ').join('_')
-    //delete accents
-    const urlNameNoAccents = urlName.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
-    //URL
-    const url = `article/${location.id}_${urlNameNoAccents}`
+// -------------------------------------------
+
+export default function LocationCard(props) {
     return (
-        <article>
-            <Link to={url} >
-                <h2>{location.title}</h2>
-                <img src={location.cover} alt={"image " + location.title} />
-            </Link>
-        </article>
+        <>
+            <div>
+                <Link className="linklocation" to={"/locations/"+props.location.id}>
+                    <div className="location-card" style={{backgroundImage:`url(${props.location.pictures[0]})`}}>
+                        <h5 className="location-title">{props.location.title}</h5>
+                        <div className="location-bgd"></div>
+                    </div>
+                 </Link>
+            </div>
+        </> 
     )
 }
-
-export default Card
