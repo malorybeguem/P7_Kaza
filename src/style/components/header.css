@@ -9,7 +9,7 @@ header{
     justify-content: space-between;
 }
 
-header img {
+.logo {
     width: auto;
     height: 20%;
     object-fit: cover;
