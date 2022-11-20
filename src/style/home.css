@@ -88,4 +88,14 @@ main .locations__container{
         filter: brightness(70%);
         
 } 
+.home_background h1{
+    width: 70%;
+    left: 5.5em;
+    top: 0.2em;
+    position: absolute;
+    z-index: 1;
+    color: azure;
+    font-size: 1em;
+    font-weight: 200;
+}
 }
