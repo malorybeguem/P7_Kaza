@@ -33,7 +33,7 @@ header ul a:visited{
 
 /*___HEADER RESPONSIVE____*/
 /*____________TABLETS_________________*/
-@media screen and (max-width: 768px) {
+@media (max-width:992px) and (min-width:768px){
 
 header{
         width: 95%;
@@ -50,7 +50,7 @@ header ul li {
     
 }
 /*______________MOBILE________________*/
-@media screen and (min-width: 396px) {
+@media (max-width: 768px){
 
 header .logo{
     width: 130px;
