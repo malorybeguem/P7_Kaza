@@ -1,8 +1,10 @@
 /*_____________________________________________________HOME PAGE___________________________________________________________________*/
         /*HOME BACKGROUND*/
 .home_background {
-    width: 100%;
+    width:95%;
     height: 100%;
+    margin-left: 2%;
+    margin-bottom: 3%;
     position: relative;
     justify-content: center;
 }
@@ -19,7 +21,7 @@
 
 .home_background h1{
     width: 70%;
-    left: 6em;
+    left: 5.5em;
     top: 1em;
     position: absolute;
     z-index: 1;
@@ -28,9 +30,62 @@
     font-weight: 200;
 }
 
+/*___________LOCATION PART___________*/
+.locations{
+    width: 95%;
+    position: relative;
+    left: 2%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #F7F7F7;
+    border-radius: 25px;
+    justify-content: center;
+}
+
 main .locations__container{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+/*___HOME RESPONSIVE____*/
+/*_______________TABLETS______________*/
+@media screen and (max-width: 768px) {
+    .home_background {
+        width:100%;
+        height: 96%;
+        margin-bottom: 25%;
+        position: relative;
+        justify-content: center;
+    }
+    .home_background img{
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        object-fit: cover;
+        position: relative;
+        filter: brightness(70%);
+        
+}
+}
+/*________________MOBILE________________*/
+@media screen and (max-width: 396px) {
+    .home_background {
+        width:100%;
+        height: 100%;
+        margin-bottom: 3%;
+        position: relative;
+        justify-content: center;
+    }
+    .home_background img{
+        height: 1px;
+        border-radius: 10px;
+        object-fit: cover;
+        position: relative;
+        filter: brightness(70%);
+        
+} 
 }
