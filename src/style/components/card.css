@@ -3,12 +3,10 @@
     height: 375px;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
     background-size: cover;
     background-position: center;
     position: relative;
     margin-top: 35px;
-    margin-left: 35px;
     border-radius: 10px;
 }
 
