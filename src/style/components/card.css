@@ -11,9 +11,10 @@
     margin-bottom: 25px;
     margin-top: 25px;
     margin-left: 35px;
-
 }
-
+.location-card:hover {
+    transform: scale(1.02);
+}
 .location-title {
     margin-top: auto;
     margin-bottom: 5px;
