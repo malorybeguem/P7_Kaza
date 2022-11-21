@@ -1,7 +1,7 @@
 
 .location-card {
-    width: 375px;
-    height: 375px;
+    width: 25.8em;
+    height: 25.8em;
     display: flex;
     align-items: flex-end;
     background-size: cover;
@@ -10,7 +10,7 @@
     border-radius: 10px;
     margin-bottom: 25px;
     margin-top: 25px;
-    margin-left: 35px;
+    margin-left: 32px;
 }
 .location-card:hover {
     transform: scale(1.02);
@@ -84,7 +84,7 @@
 
 @media (max-width: 768px) {
     .location-card {
-        width: 450px;
+        width: 150%;
         height: 400px;
         display: flex;
         background-size: cover;
