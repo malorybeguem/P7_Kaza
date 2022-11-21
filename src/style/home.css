@@ -68,6 +68,11 @@ main .locations__container{
     top: 20%;
     font-size: 2em;
 }
+main .locations__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 }
 /*________________MOBILE________________*/
 @media (max-width: 768px){
@@ -107,6 +112,6 @@ main .locations__container{
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    width: 95%;
+    width: 100%;
 }
 }
