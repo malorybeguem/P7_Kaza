@@ -2,12 +2,12 @@ import React from "react"
 import axios from "axios"
 import {useEffect, useState} from "react"
 import {useNavigate} from "react-router-dom"
-import Footer from "../components/Footer"
-import Header from "../components/Header"
-import Slider from "../components/Slider"
-import Dropdown from "../components/Dropdown"
-import Stars from "../components/Stars"
-import Tags from "../components/Tags"
+import Footer from "../components/footer"
+import Header from "../components/header"
+import Slider from "../components/slider"
+import Collapse from "../components/collapse"
+import Stars from "../components/stars"
+import Tags from "../components/tags"
 
 const Article = () => {
     //recover url
@@ -82,9 +82,9 @@ const Article = () => {
                         </div>
                     </section>
                     <section className="article__details">
-                        <Dropdown classDP="dropdownArticle__button" classP="dropdownArticle__p" title="Description" content={locationData.description} />
+                        <Collapse classDP="dropdownArticle__button" classP="dropdownArticle__p" title="Description" content={locationData.description} />
                         <div className="article__details__space"></div>
-                        <Dropdown classDP="dropdownArticle__button" classP="dropdownArticle__p" title="Équipements" content={locationData.equipments} />
+                        <Collapse classDP="dropdownArticle__button" classP="dropdownArticle__p" title="Équipements" content={locationData.equipments} />
                     </section>
                 </main>
             </div>
@@ -92,3 +92,5 @@ const Article = () => {
         </div>
     )
 }
+
+export default Article
