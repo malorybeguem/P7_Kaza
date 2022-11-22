@@ -1,8 +1,8 @@
 
 @media (min-width:992px){
 .location-card {
-    width: 25.8em;
-    height: 25.8em;
+    width: 90%;
+    height: 20.8em;
     display: flex;
     align-items: flex-end;
     background-size: cover;
@@ -11,7 +11,7 @@
     border-radius: 10px;
     margin-bottom: 25px;
     margin-top: 25px;
-    margin-left: 32px;
+    margin-left: 5%;
 }
 .location-card:hover {
     transform: scale(1.02);
@@ -53,7 +53,7 @@ div{
     .location-card {
         margin-bottom: 25px;
         margin-top: 25px;
-        width: 40%;
+        width: 90%;
         height: 15.8em;
         display: flex;
         align-items: flex-end;
@@ -61,7 +61,7 @@ div{
         background-position: center;
         position: relative;
         border-radius: 10px;
-        margin-left: 25px;
+        margin-left: 20px;
 }
  
     .location-title {
