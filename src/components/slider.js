@@ -3,6 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import ArrowLeft from "../assets/img/arrowLeft.svg";
 import ArrowRight from "../assets/img/arrowRight.svg";
+import "../style/components/slider.css"
 
 // INITIALIZE SLIDER FUNCTION //
 function Slider(product) {
