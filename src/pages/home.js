@@ -1,27 +1,44 @@
 // IMPORTS //
-import React from "react"
-import Footer from "../components/footer"
-import Locations from "../components/locations"
-import Header from "../components/header"
-import home from "../assets/img/home.png"
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Products from "../data/logements.json";
+import Meta from "../components/meta";
+import HomeImg from "../assets/img/home.png";
+import "../style/home.css";
 
-// HOME PAGE // 
-const Home = () => {
-    return (
-        <div>
-            <div className="content">
-                <Header />
-                <div className="banner">
-                    <div className="home_background">
-                        <h1>Chez vous, partout et ailleurs</h1>
-                        <img src={home} alt="Paysage de rochers avec des arbres à côté de la mer" />
-                    </div>
-                </div> 
-                <Locations />
+// HOME PAGE PARAMS //
+export default function Home() {
+   const [currImg] = useState(0);
+    // SETTING META TITLE //
+   const metaTitle = "Kasa : location d'appartements entre particuliers";
+    // SETTING META DESC //
+   const metaDescription =
+      "Kasa est une entreprise dans la location d'appartements entre particuliers. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d'appartements entre particuliers en France";
+
+      // HOME DISPLAY HTML //
+   return ( 
+      <div className="home">
+         <Meta title={metaTitle} description={metaDescription} />
+         <section className="home__section">
+            <p>Chez vous, partout et ailleurs</p>
+            <div className="home__img">
+               <img src={HomeImg} alt="décor naturel"></img>
             </div>
-            <Footer />
-        </div>
-    )
-}
+         </section>
+         <div className="gallery">
+            {Products.map((product) => (
+            <div className="location__container">
+                    <Link to={`/Logement/${product.id}`}
+                        className="product__item"
+                        key={product.id} >
+                        <img src={product.pictures[currImg]} alt="logement" className="product__img"/>
+                            <div className="product__title">
+                                <span>{product.title}</span>
+                            </div>
+                    </Link> 
+            </div>))}
 
-export default Home
+         </div>
+      </div>
+   );
+}

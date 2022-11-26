@@ -1,26 +1,30 @@
-// IMPORTATIONS //
-import React from "react" // REACT IMPORT
-import {NavLink} from "react-router-dom"
-import Logo from "../assets/logo/logo.svg" // LOGO IMPORT 
+// IMPORTS //
+
+import React from "react"
+import {Link} from "react-router-dom"
+import Logo from "../assets/logo/logo.svg" 
 import '../style/components/header.css'
 
-// HEADER HTML CONSTITUTION //
-const Header = () => {
-    return ( // HTML CODE FOR THE HEADER //
-    <header> 
-            <img className="logo" src={Logo} alt="Logo Kasa" />
-            <nav>
-                <ul>
-                    <NavLink to="/">
-                        <li>Accueil</li>
-                    </NavLink>
-                    <NavLink to="/a-propos">
-                        <li>A Propos</li>
-                    </NavLink>
-                </ul>
-            </nav>
-        </header>
-    )
-}
+// SETTING HEADER HTML CONSTITUTION //
 
-export default Header;
+export default function Header() {
+    return (
+       <div className="header">
+          <nav>
+             <img className="header__logo" src={Logo} alt="logo de Kasa"></img>
+             <ul>
+                <li>
+                   <Link to="/" className="items">
+                      Accueil
+                   </Link>
+                </li>
+                <li>
+                   <Link to="/about" className="items">
+                      A Propos
+                   </Link>
+                </li>
+             </ul>
+          </nav>
+       </div>
+    );
+ }

@@ -1,16 +1,11 @@
-import React from "react"
+import React from "react";
 
-const Tags = ({tags}) => {
-    return (
-        <div className="tags">
-            {tags && tags.map((tag, index) => (
-                <div className="tags__content" key={index}>
-                    <span>{tag}</span>
-                </div>
-            ))}
-        </div>
-    )
-}
+const Tags = ({ getTag }) => {
+  return (
+    <div className="tag">
+      <p className="tag__text">{getTag}</p>
+    </div>
+  );
+};
 
-export default Tags
-
+export default Tags;

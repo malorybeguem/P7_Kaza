@@ -1,77 +1,31 @@
 /********************************************************HEADER*******************************************************************/
 
-header{
-    width: 95%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+nav{
     display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 2% 0 1% 5%;
     align-items: center;
-    justify-content: space-between;
 }
-
-header img{
-    width: auto;
-    object-fit: cover;
-}
-
-header ul {
+nav ul{
     display: flex;
-    width: 100%;
-    margin-left: 13%;
+    padding: 0;
 }
-
-header ul li{
-    display: flex;
-    margin: 10px 0 0 90px;
-    justify-content: space-between;
-    font-weight: 500;
-    font-size: 1.5em;
+nav li{
+    display: block;
+    padding: 0 0 0 80px; 
+       
+}
+li a{
+    cursor: pointer;
+    font-size: 24px;
+    text-decoration: none;
     color: #FF6060;
 }
-header ul a:visited{
-    color: #FF6060;
+li a:hover{
+    text-decoration: underline;
 }
-header ul a:hover{
-    color: #fa7777;
-}
-header ul li:hover{
-    color: #fa7777;
-}
-
-/*________HEADER RESPONSIVE____________*/
-/*____________TABLETS_________________*/
-@media (max-width:992px) and (min-width:768px){
-
-header{
-        width: 95%;
-        height: 68px;
-        margin-top: 40px;
-        margin-bottom: 63px;
-}
-header img{
-        width: 150px;
-        }
-header ul li {
-        margin-left: 66px;
-    }
-    
-}
-/*______________MOBILE________________*/
-@media (max-width: 768px){
-
-header .logo{
-    width: 130px;
-        }
-    header{
-        width: 100%;
-        height: 66px;
-        margin-top: 40px;
-        margin-bottom: 63px;
-}
-
-header ul li {
-        margin-left: 35px;
-        margin-right: 20px;
-        font-size: 18px;
-    }
+.header__logo{
+    height: 68px;
+    width: 210px;
 }

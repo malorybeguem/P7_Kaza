@@ -1,54 +1,93 @@
+// IMPORTS //
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import ArrowLeft from "../assets/img/arrowLeft.svg";
+import ArrowRight from "../assets/img/arrowRight.svg";
 
-// IMG IMPORTATION //
-import arrowLeft from "../assets/img/arrowLeft.svg";
-import arrowRight from "../assets/img/arrowRight.svg";
+// INITIALIZE SLIDER FUNCTION //
+function Slider(product) {
+   const [currentIndex, setCurrentIndex] = useState(0);
+   const [right, setRight] = useState(true);
+   const slides = product.data;
 
-//SLIDE //
-const Slider = ({ slides }) => {
-  const [current, setCurrent] = useState(0);
-  const length = slides.length;
+   useEffect(() => {
+      slides.forEach((image) => {
+         new Image().src = image;
+      });
+   }, [slides]);
 
-  const nextSlide = () => {
-    setCurrent(current === length - 1 ? 0 : current + 1);
-  };
+   // PREVIOUS PICTURE //  
+   const goToPrevious = () => {
+      setRight(false);
+      const isFirstSlide = currentIndex === 0;
+      const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+      setCurrentIndex(newIndex);
+   };
 
-  const prevSlide = () => {
-    setCurrent(current === 0 ? length - 1 : current - 1);
-  };
+   // NEXT PICTURE //
+   const goToNext = () => {
+      setRight(true);
+      const isLastSlide = currentIndex === slides.length - 1;
+      const newIndex = isLastSlide ? 0 : currentIndex + 1;
+      setCurrentIndex(newIndex);
+   };
 
-  return (
-    <div className="slider">
-      {slides.map((picture, index) => {
-        return (
-          <div
-            key={index}
-            className={
-              index === current
-                ? "slide slider__active-picture"
-                : "slide slider__inactive-picture"
-            }
-          >
-            {index === current && (
-              <img src={picture} alt="" className="slider__picture" />
-            )}
-          </div>
-        );
-      })}
-      {/* get button if there are more thant one picture */}
-      {length > 1 ? (
-        <>
-          <div className="slider__previous" onClick={prevSlide}>
-            <img src={arrowLeft} alt="" className="slider__previous-icon" />
-          </div>
-          <div className="slider__next" onClick={nextSlide}>
-            <img src={arrowRight} alt="" className="slider__next-icon" />
-          </div>
-        </>
-      ) : null}
-    </div>
-  );
-};
+   
+   const moreOneImg = () => {
+      if (slides.length - 1 >= 1) {
+         return true;
+      }
+      return false;
+   };
+
+   return moreOneImg() ? (
+      <div className="slider__styles">
+         <img
+            className="arrow left__arrow"
+            src={ArrowLeft}
+            alt="flèche vers la gauche"
+            onClick={goToPrevious}
+         ></img>
+
+         <img
+            className="arrow right__arrow"
+            src={ArrowRight}
+            alt="flèche vers la droite"
+            onClick={goToNext}
+         ></img>
+         {slides.map((slide, index) => {
+            return (
+               <div
+                  className={
+                     index === currentIndex
+                        ? `${right ? "right" : "left"}`
+                        : "slide__styles-hide"
+                  }
+                  key={index}
+               >
+                  {index === currentIndex && (
+                     <img
+                        src={slide}
+                        alt="logement"
+                        className={
+                           right ? "slide__styles-right" : "slide__styles-left"
+                        }
+                     ></img>
+                  )}
+               </div>
+            );
+         })}
+         <span className="number__styles">
+            {currentIndex + 1}/{slides.length}
+         </span>
+      </div>
+   ) : (
+      <img
+         src={`${slides[currentIndex]}`}
+         className="slide__styles-one"
+         alt="logement"
+      ></img>
+   );
+}
 
 export default Slider;

@@ -1,25 +1,24 @@
+// IMPORTS //
 import React from "react"
 import {Link} from "react-router-dom"
-import Footer from "../components/footer"
-import Header from "../components/header"
 import "../style/error.css"
+import Meta from "../components/meta";
+import ErrorImg from "../assets/img/404.png"
 
-const Error = () => {
+//ERROR FUNCTION - and HTML DISPLAY
+export default function Error() {
     return (
-        <div>
-            <div className="content">
-                <Header />
-                <main className="error">
-                    <h1>404</h1>
-                    <p>Oups! La page que vous demandez n'existe pas.</p>
-                    <Link className="backHome" to="/">
-                        Retourner sur la page d’accueil
-                    </Link>
-                </main>
-            </div>
-            <Footer />
-        </div>
-    )
-}
-
-export default Error
+       <div className="error">
+          <Meta title={null} description={null} />
+          <div>
+             <img src={ErrorImg} alt="erreur 404" />
+          </div>
+          <p className="error__p">
+             Oups! La page que vous demandez n'existe pas.
+          </p>
+          <Link to={`/`} className="error__home">
+             Retour sur la page d'acceuil
+          </Link>
+       </div>
+    );
+ }

@@ -1,0 +1,35 @@
+.article__details {
+    margin-bottom: 100px;
+}
+
+.dropdown__button {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color:#ff6060;
+    cursor: pointer;
+    padding-left: 19px;
+    padding-right: 7px;
+}
+.dropdown__button__arrow{
+    width: auto;
+    height: 10px;
+}
+.dropdown {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.dropdown ul li{
+    border-radius: 0 0 5px 5px;
+}
+.dropdown ul{
+    height: 100%;
+}
+.dropdown p{
+    height: 100%;
+    background-color: #f6f6f6;
+}

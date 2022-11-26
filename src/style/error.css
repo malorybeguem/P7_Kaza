@@ -1,27 +1,26 @@
-main{
+/*______________ERROR________________*/
+.error{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 100px 0 20px 0;
 }
-main h1{
-    margin: 8rem 0 4rem 0;
-    font-size: 18rem;
-    font-weight: 700;
+.error p{
+    font-size: 36px;
+    width: 95%;
+    margin: 50px 0;
+}
+.error__home{
+    text-decoration: none;
+    font-size: 18px;
     color: #FF6060;
-    }
-main .backHome {
-    display: inline-block;
-    margin: 8rem 0;
-    color: #FF6060;
+    margin: 100px 0 ;
+}
+.error__home:hover{
     text-decoration: underline;
-    }
-main p{
-    color: #FF6060;
 }
-/*__________ERROR RESPONSIVE______________*/
-@media screen and (min-width: 768px) {
-main .backHome{ 
-    width: 100%;
+.error img{
+    width: 95%;
 }
-}
+/*_________ERROR RESPONSIVE MOBILE___________*/

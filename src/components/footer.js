@@ -2,15 +2,13 @@ import React from "react"
 import Logo from "../assets/logo/Logo_White.png"
 import "../style/components/footer.css"
 
-const Footer = () => {
-    return (
-        <footer>
-            <div className="footer_content">
-                <img src={Logo} alt="Logo Kasa" />
-                <p>© 2020 Kasa. All rights reserved</p>
-            </div>
-        </footer>
-    )
+export default function Footer() {
+   return (
+      <div className="footer">
+         <div className="footer__logo">
+            <img src={Logo} alt="logo de Kasa"></img>
+         </div>
+         <p className="footer__text">© 2020 Kasa. All rights reserved</p>
+      </div>
+   );
 }
-
-export default Footer
