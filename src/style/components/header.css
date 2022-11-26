@@ -6,6 +6,7 @@ nav{
     width: 90%;
     margin: 2% 0 1% 5%;
     align-items: center;
+    font-family: 'Montserrat';
 }
 nav ul{
     display: flex;
