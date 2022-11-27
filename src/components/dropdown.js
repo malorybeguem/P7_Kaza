@@ -10,7 +10,7 @@ export default function DropDown({ txt, title, txtArray }) {
 
    return isOpen ? ( //HERE WE SET WHAT HAPPENING WHEN IT IS OPEN //
       <div>
-         <button // SETTING BUTTON 
+         <button // SETTING BUTTONS 
             className="dropdown__button"
             type="button"
             onClick={() => setIsOpen(false)}
