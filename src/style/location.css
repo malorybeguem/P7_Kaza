@@ -59,6 +59,7 @@ p{
 .house__location{
     font-size: 18px;
 }
+/*_______________TAGS______________*/
 .tags{
     display: flex;
     align-items: center;
@@ -72,6 +73,7 @@ p{
     text-align: center;
     margin: 10px 10px 10px 0;
 }
+/*________________RATING IMG _______________*/
 .rating img{
     margin: 25px 0 0 7px;
 }
