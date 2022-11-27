@@ -1,21 +1,17 @@
-.bannerAbout{
+/*___________________ABOUT IMG__________________*/
+.about__section{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
     width: 100%;
 }
-.bannerAbout img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    filter: brightness(60%);
+.about{
+    margin-top: 3%;
 }
-.dropdownAbout {
-    margin-bottom: 220px;
+.about__img{
+    width: 90%;
 }
-
-.dropdownAbout__button {
-    height: 30px;
-}
-
-.dropdownAbout__p {
-    padding: 20px 20px 53px 20px;
+.about__img2{
+    display: none;
 }

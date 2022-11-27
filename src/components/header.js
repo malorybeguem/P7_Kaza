@@ -1,9 +1,9 @@
 // IMPORTS //
 
-import React from "react"
-import {Link} from "react-router-dom"
-import Logo from "../assets/logo/logo.svg" 
-import '../style/components/header.css'
+import React from "react";
+import {Link} from "react-router-dom";
+import Logo from "../assets/logo/logo.svg";
+import '../style/components/header.css';
 
 // SETTING HEADER HTML CONSTITUTION //
 

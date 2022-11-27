@@ -2,7 +2,9 @@
 import React, { useState } from "react";
 import ArrowTop from "../assets/img/topArrow.svg";
 import ArrowBot from "../assets/img/bottomArrow.svg";
+import "../style/components/dropdown.css"
 
+// COLLAPSE FUNCTION FOR ARTICLE PAGE AND ABOUT //
 export default function DropDown({ txt, title, txtArray }) {
    const [isOpen, setIsOpen] = useState(false);
 

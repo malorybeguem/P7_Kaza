@@ -23,4 +23,19 @@
 .error img{
     width: 95%;
 }
-/*_________ERROR RESPONSIVE MOBILE___________*/
+/*_________ERROR RESPONSIVE___________*/
+@media all and (max-width:768px){
+.error img{
+    width: 198px;
+    height: 99px;
+}
+.error p{
+    font-size: 18px;
+    width: 80%;
+    margin: 20px 0; 
+}
+.error__home{
+    font-size: 14px;
+    text-decoration: underline;
+}
+}

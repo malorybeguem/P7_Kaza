@@ -1,0 +1,92 @@
+/*__________DROPDOWN FOR "LOGEMENT" PAGE___________*/
+
+.drop{
+    display: flex;
+    justify-content: space-between;
+}
+.drop__down{
+    width: 47%;
+    margin-bottom: 30px;
+}
+.dropdown__p__array{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+    padding: 30px 30px 40px 15px;
+    background: #F6F6F6;
+    border-radius: 5px;
+    margin: 0;
+}
+.dropdown__p-array{
+    margin: 0;
+}
+.house__boxes .dropdown__button{
+    border-radius: 10px;
+    padding: 0 15px 0 15px;
+}
+
+/*__________DROPDOWN FOR ABOUT___________*/
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 50px 0 50px 0;
+}
+.dropdown__box{
+    width: 80%;
+    margin: 15px 0 15px 0;
+}
+.dropdown__button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: #FF6060;
+    border-radius: 5px;
+    border-style : none;
+    height: 47px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #FFFFFF;
+    padding: 0 30px 0 15px;
+    cursor: pointer;
+}
+.dropdown__p{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+    padding: 30px 30px 40px 15px;
+    background: #F6F6F6;
+    border-radius: 5px;
+    margin: 0;
+}
+/*____________DROPDOWN - ABOUT RESPONSIVE___________*/
+@media all and (max-width:630px){
+    .dropdown{
+        margin-top: 10px;
+    } 
+    .dropdown__p{
+        font-size: 14px;
+    }
+    .dropdown__box{
+        width: 90%;
+    }
+    .dropdown__button{
+        font-size: 14px;
+        padding-right: 15px;
+    }
+    .about .dropdown__button{
+        padding: 0 15px 0 15px;
+    }
+    .about__img{
+        display: none;
+    }
+    .about__img2{
+        display: inherit;
+        width: 90%;
+        object-fit: contain;
+    }
+}

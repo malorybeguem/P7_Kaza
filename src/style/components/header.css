@@ -30,3 +30,20 @@ li a:hover{
     height: 68px;
     width: 210px;
 }
+/*_____________HEADER RESPONSIVE_______________*/
+@media all and (max-width:768px){
+    .header__logo{
+        Width : 145px;
+        height: 47px;
+    }
+    li a{
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+    nav{
+        margin-top: 4%;
+    }
+    nav li{
+        padding: 0 10px 0 10px;
+    }
+}

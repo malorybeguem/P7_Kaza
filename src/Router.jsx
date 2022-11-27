@@ -6,6 +6,7 @@ import Error from "../src/pages/error";
 import Logement from "../src/pages/logement";
 import Header from "../src/components/header";
 import Footer from "../src/components/footer";
+import "../src/style/index.css"
 
 function Routing() {
    return (
