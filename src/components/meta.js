@@ -1,4 +1,4 @@
-// META FUNCTION 
+// META INFORMATIONS FUNCTION 
 export default function Meta({ title, description }) {
    const el = document.querySelector("title");
    if (title) {

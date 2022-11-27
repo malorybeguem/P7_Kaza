@@ -1,3 +1,4 @@
+//IMPORTS//
 import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Products from "../data/logements.json";
@@ -7,14 +8,15 @@ import Collapse from "../components/dropdown";
 import Meta from "../components/meta";
 import "../style/location.css"
 
+//CALL FOR ARTICLES RETURN//
 export default function Article() {
-   const params = useParams();
+   const params = useParams(); // USING USEPARAMS TO RETURN PRODUCTS FROM URL
 
    const navigate = useNavigate();
    useEffect(() => {
-      let product = Products.find((product) => params.id === product.id);
+      let product = Products.find((product) => params.id === product.id); // CONST FOR FIND PRODUCTS ID FROM URL 
       if (!product) {
-         navigate("/error");
+         navigate("/error"); // REDIRECT TO ERROR PAGE IF PRODUCT NOT FOUND
       }
    });
 

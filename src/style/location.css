@@ -75,3 +75,63 @@ p{
 .rating img{
     margin: 25px 0 0 7px;
 }
+/*___________LOCATIONS RESPONSIVE____________*/
+@media all and (max-width:768px){
+    #house{
+        margin-top: 30px;
+    }
+    .house__box{
+        flex-direction: column;
+    }
+    .house__left{
+        width: 100%;
+        margin: 15px 0 3px 0;
+    }
+    .house__right{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin-top: 10px;
+    }
+    .house__host{
+        width: 40px;
+    }
+    .house__name p{
+        width: 100%;
+    }
+    h2{
+        font-size: 23px;
+    }
+    p{
+        line-height: 142.6%;
+        font-size: 14px;
+    }
+    .tag{
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    .rating img{
+        width: 20px;
+        margin: 0 5px 0 0;
+    }
+    .house__boxes .dropdown__button{
+        border-radius: 5px;
+    }
+    .drop{
+        flex-direction: column;
+    }
+    .drop__down{
+        width: 100%;
+    }
+    .rating{
+        text-align: left;
+        align-self: center;
+        width: 100%;
+    }
+    .arrow{
+        height: 25px;
+    }
+    .house__carousel{
+        height: 255px;
+    }
+}
