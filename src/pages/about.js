@@ -5,7 +5,7 @@ import AboutMedium from "../assets/img/AboutMedSize.png";
 import DropDown from "../components/dropdown";
 import Meta from "../components/meta";
 import "../style/about.css";
-import "../style/components/dropdown.css";
+import "../style/components/dropdown.css"
 
 // ABOUT - SETTINGS //
 export default function About() {
