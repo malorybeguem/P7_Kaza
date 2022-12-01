@@ -18,6 +18,7 @@
 .about__img2{
     display: none;
 }
+/*__________________RESPONSIVE___________________*/
 @media all and (max-width:768px){
     .about .dropdown__button{
         padding: 0 15px 0 15px;
@@ -35,5 +36,9 @@
         z-index: -1;
         object-fit: cover;
         border-radius: 25px;
+    }
+    .tags{
+        display: flex;
+        flex-wrap: wrap;
     }
 }

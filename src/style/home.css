@@ -40,6 +40,7 @@ section p{
     object-fit: cover;
     filter: brightness(70%);
 }
+/*______________________________________RESPONSIVE_____________________________________________*/
 @media all and (min-width:768px){
 /*_______________GALLERY-PART___________________*/
 .gallery{

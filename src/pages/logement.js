@@ -14,7 +14,7 @@ export default function Article() {
 
    const navigate = useNavigate();
    useEffect(() => {
-      let product = Products.find((product) => params.id === product.id); // CONST FOR FIND PRODUCTS ID FROM URL 
+      let product = Products.find((product) => params.id === product.id); // CONST FOR COMPARE PRODUCTS ID  to the URL one
       if (!product) {
          navigate("/error"); // REDIRECT TO ERROR PAGE IF PRODUCT NOT FOUND
       }
