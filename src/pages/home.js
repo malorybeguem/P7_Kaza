@@ -17,7 +17,7 @@ export default function Home() {
 
       // HOME DISPLAY HTML //
    return ( 
-      <div className="home">
+      <div id="home" className="home">
          <Meta title={metaTitle} description={metaDescription} />
          <section className="home__section">
             <p>Chez vous, partout et ailleurs</p>
@@ -27,10 +27,10 @@ export default function Home() {
          </section>
          <div className="gallery">
             {Products.map((product) => (
-            <div className="location__container">
+            <div className="location__container"key={product.id} >
                     <Link to={`/Logement/${product.id}`}
                         className="product__item"
-                        key={product.id} >
+                         > 
                         <img src={product.pictures[currImg]} alt="logement" className="product__img"/>
                             <div className="product__title">
                                 <span>{product.title}</span>
